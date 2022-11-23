@@ -26,8 +26,17 @@ interface Person {
     name: string;
     age: number;
 }
+
 function askSomeone(someone: Developer | Person) {
-    someone.name
+    someone.name;
     // someone.skill
     // someone.age
 }
+function askSomeone1(someone: Developer & Person) {
+  someone.name;
+  someone.skill
+  someone.age
+}
+
+// var haley: string | number | boolean;
+// var capt: string & number & boolean;
